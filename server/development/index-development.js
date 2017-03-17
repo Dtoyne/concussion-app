@@ -134,9 +134,9 @@ const questionAnswerScore = (params, userResponse, conversationID) => {
       userReports[id].sacConcentration.push({ question : answer });
 
       updateSACTotalScore(score, id);
-      conversations[id].concentration       += score;
-      userReports[id].sacConcentrationScore += score;
-      userReports[id].sacTotalScore         += score;
+      score += conversations[id].concentration;
+      score += userReports[id].sacConcentrationScore;
+      score += sacTotalScore;
       showScores(id, question, answer, score)
     }
   }
@@ -150,9 +150,9 @@ const questionAnswerScore = (params, userResponse, conversationID) => {
       userReports[id].sacDelayedRecall.push({ question : answer });
 
       updateSACTotalScore(score, id);
-      conversations[id].delayedRecall       += score;
-      userReports[id].sacDelayedRecallScore += score;
-      userReports[id].sacTotalScore         += score;
+      score += conversations[id].delayedRecall;
+      score += userReports[id].sacDelayedRecallScore;
+      score += userReports[id].sacTotalScore;
       showScores(id, question, answer, score)
     }
   }

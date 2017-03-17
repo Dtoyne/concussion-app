@@ -14,7 +14,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   mongoDBConnection = db;
 });
 
-// Function to find search MongoDB for assessments
+// Function to search MongoDB for assessments
 const fetchDiagnosisById = () => {
   return new Promise((resolve, reject) => {
     mongoDBConnection
