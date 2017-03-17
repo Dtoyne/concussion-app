@@ -38,7 +38,7 @@ DISCLAIMER: The information contained herein should NOT be used as a substitute 
 ###### Commit your code to the repository and deploy it to Heroku using Git.
 
 - git add .
-- git commit -m "Make it better"
+- git commit -m "Made it better"
 - git push heroku master
 
 ### App Domain
