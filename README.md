@@ -15,7 +15,7 @@ administered by Cerebrum through a series of questions.
 - Mailgun
 - Heroku *Deployed Successfully*
 - Webhooks
-- PostgreSQL * Expected to change to MongoDB
+- MongoDB
 - Knex
 - HTML5
 - CSS3
